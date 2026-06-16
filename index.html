@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mariane Louise Sanchez — Portfolio</title>
+
+  <link rel="icon" href="LogoR.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Pinyon+Script&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar navbar-expand-lg ms-navbar fixed-top">
+    <div class="container-fluid px-4 px-lg-5">
+      <a class="navbar-brand ms-brand" href="index.html">
+        <img src="LogoR.svg" alt="Mariane Louise Sanchez logo" class="navbar-logo">
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMain"
+              aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-4 text-maroon"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMain">
+        <ul class="navbar-nav align-items-center gap-4">
+          <li class="nav-item"><a class="nav-link ms-link active" href="index.html">About</a></li>
+          <li class="nav-item"><a class="nav-link ms-link" href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO / ABOUT ░░ -->
+  <section id="about" class="ms-hero">
+    <!-- Ambient background shapes -->
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+    <!-- Floating coding icons scattered across the about section -->
+    <div class="floating-icons" aria-hidden="true">
+      <div class="fi fi-1"><i class="bi bi-code-slash"></i></div>
+      <div class="fi fi-2"><i class="bi bi-terminal-fill"></i></div>
+      <div class="fi fi-4"><i class="bi bi-github"></i></div>
+      <div class="fi fi-5"><i class="bi bi-laptop-fill"></i></div>
+      <div class="fi fi-6"><i class="bi bi-server"></i></div>
+      <div class="fi fi-7"><i class="bi bi-wrench"></i></div>
+      <div class="fi fi-10"><i class="bi bi-hdd-network"></i></div>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center g-5 g-lg-0 min-vh-hero">
+
+        <!-- LEFT: portrait + contact -->
+        <div class="col-lg-5 col-xl-4 text-center text-lg-start fade-up" style="--delay:0.1s">
+          <div class="portrait-wrap mx-auto">
+            <!-- Decorative ring (hidden) kept for fallback) -->
+            <div class="portrait-ring" aria-hidden="true"></div>
+            <!-- Centered ambient blob behind portrait -->
+            <div class="portrait-orb" aria-hidden="true"></div>
+            <!-- Animated maroon aura behind the portrait -->
+            <div class="portrait-aura" aria-hidden="true"></div>
+            <!-- Portrait image (loads from static/images/1.jpg) -->
+            <div class="portrait-img">
+              <img src="static/images/1.jpg" alt="Mariane Louise Sanchez portrait" class="portrait-photo img-fluid" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+              <div class="portrait-placeholder d-flex align-items-center justify-content-center" aria-hidden="true">
+                <i class="bi bi-person-fill portrait-icon"></i>
+              </div>
+            </div>
+            <!-- Floating badges removed per user request -->
+          </div>
+
+          <!-- Contact card -->
+          <div class="contact-card mt-5 fade-up mx-auto" style="--delay:0.3s">
+            <p class="contact-label mb-3"><i class="bi bi-send-fill me-2"></i>Get in Touch</p>
+            <div class="d-flex align-items-start gap-3 mb-2">
+              <i class="bi bi-envelope-at contact-icon"></i>
+              <div>
+                <div class="contact-key">Email</div>
+                <div class="contact-val">sanchez.marianelouise@gmail.com</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-telephone contact-icon"></i>
+              <div>
+                <div class="contact-key">Phone</div>
+                <div class="contact-val">Available upon request</div>
+              </div>
+            </div>
+            <div class="d-flex gap-3 mt-4">
+              <a href="https://github.com" target="_blank" rel="noopener" class="social-pill" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.instagram.com/by_louises/" target="_blank" rel="noopener" class="social-pill" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://figma.com" target="_blank" rel="noopener" class="social-pill" aria-label="Figma">
+                <i class="bi bi-vector-pen"></i>
+              </a>
+              <a href="mailto:marianelouisebsanchez@iskolarngbayan.pup.edu.ph" class="social-pill" aria-label="Outlook Email">
+                <i class="bi bi-envelope-open-fill" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: intro text -->
+        <div class="col-lg-7 col-xl-8 ps-lg-5 hero-right fade-up" style="--delay:0.2s">
+          <p class="hero-eyebrow">Hello, I'm</p>
+          <h1 class="hero-name">Mariane Louise Sanchez</h1>
+          <p class="hero-role"> UI/UX Designer &nbsp;·&nbsp; Frontend Developer</p>
+
+          <div class="divider-thin my-4"></div>
+
+          <p class="hero-body">
+            I'm a <strong>Bachelor of Science in Information Technology</strong> student at the Polytechnic University of the Philippines — Sto. Tomas Campus, passionate about building digital experiences that will help shape me in building my technological skills.
+          </p>
+          <p class="hero-body">
+            My work sits at the intersection of clean code and intentional design. I believe every pixel should have a purpose, every function should solve a real problem, and every interface should feel effortless to use — whether that's a seamlessly responsive web app or a database architecture that just works.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="btn ms-btn-primary" href="#toolkit">
+              <i class="bi bi-tools me-2"></i>View Toolkit
+            </a>
+            <a class="btn ms-btn-outline" href="#education">
+              <i class="bi bi-mortarboard me-2"></i>Education
+            </a>
+            <a class="btn ms-btn-outline" href="projects.html">
+              <i class="bi bi-folder2-open me-2"></i>My Projects
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll cue removed per user request -->
+  </section>
+
+  <!-- ░░ WHAT I DO — 3-card strip ░░ -->
+  <section class="ms-what-section py-5">
+    <div class="container py-4">
+      
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7 fade-up fade-left" style="--delay:0.1s">
+            <div class="px-2 px-lg-0">
+              <p class="section-eyebrow">What I do</p>
+              <h2 class="section-title">My Roles</h2>
+              <p class="section-sub mt-3">These are the roles I have taken on in my academic and personal projects throughout my programming journey.</p>
+            </div>
+          </div>
+
+            <div class="col-lg-5">
+            <div class="card-stack fade-right" data-stack>
+              <div class="stack-item" data-index="0">
+                <div class="what-card stack-card">
+                  <div class="what-icon-wrap mb-3">
+                    <i class="bi bi-palette2"></i>
+                  </div>
+                  <h3 class="what-title">Designer</h3>
+                  <p class="what-body">I have experience in designing interfaces using Figma that balances visual elegance with human-centered designs, ensuring a seamless user experience. I believe that good design is not just about aesthetics, but about creating solutions that truly serve the user and with purpose.</p>
+                </div>
+              </div>
+              <div class="stack-item" data-index="1">
+                <div class="what-card stack-card">
+                  <div class="what-icon-wrap mb-3">
+                    <i class="bi bi-code-slash"></i>
+                  </div>
+                  <h3 class="what-title">Web Developer</h3>
+                  <p class="what-body">From having a background in web development in the early stages of my junior high school years, programming has been an interesting journey of continuous learning and problem-solving. It was a challenging yet, rewarding experience that sparked my passion for technology and see how it evolves.</p>
+                </div>
+              </div>
+              <div class="stack-item" data-index="2">
+                <div class="what-card stack-card">
+                  <div class="what-icon-wrap mb-3">
+                    <i class="bi bi-database"></i>
+                  </div>
+                  <h3 class="what-title">Basic Database Developer</h3>
+                  <p class="what-body">As a college student, I was exposed to database concepts and was able to design efficient database schemas, ensuring that data flows cleanly through every layer of the system. This experience has equipped me with the skills to manage and optimize data storage solutions.</p>
+                </div>
+              </div>
+              <div class="stack-item" data-index="3">
+                <div class="what-card stack-card">
+                  <div class="what-icon-wrap mb-3">
+                    <i class="bi bi-check2-circle"></i>
+                  </div>
+                  <h3 class="what-title">Quality Assurance</h3>
+                  <p class="what-body">In every progress made, I always assure if every element and feature meets the required standards and functions as intended. By conducting thorough testing and evaluation, I ensure that the final product meets the highest quality benchmarks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ░░ TECHNICAL TOOLKIT ░░ -->
+    <section id="toolkit" class="ms-toolkit-section py-5">
+      <div class="container py-4">
+
+        <!-- Section header -->
+        <div class="row mb-5 fade-up" style="--delay:0.1s">
+          <div class="col-lg-6">
+            <p class="section-eyebrow">What I work with</p>
+            <h2 class="section-title">Technical Toolkit</h2>
+          </div>
+          <div class="col-lg-6 d-flex align-items-end">
+            <p class="section-sub">These are the set of programming languages and frameworks I was able to learn in college. </p>
+          </div>
+        </div>
+
+        <!-- Toolkit grid: 2 × 2 Bootstrap grid -->
+        <div class="row g-4">
+
+          <!-- Design -->
+          <div class="col-sm-6 col-xl-3 fade-up" style="--delay:0.1s">
+            <div class="tk-card h-100">
+              <div class="tk-card-icon mb-3">
+                <i class="bi bi-palette2"></i>
+              </div>
+              <h4 class="tk-card-title">Design</h4>
+              <p class="tk-card-body">Visual design and prototyping tools for creating polished, user-centered interfaces.</p>
+              <div class="tk-chips mt-auto pt-3">
+                <span class="tk-chip">Figma</span>
+                <span class="tk-chip">Illustrator</span>
+                <span class="tk-chip">Adobe XD</span>
+                <span class="tk-chip">Git</span>
+                <span class="tk-chip">Github</span>
+                <span class="tk-chip">Visual Studio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="col-sm-6 col-xl-3 fade-up" style="--delay:0.2s">
+            <div class="tk-card tk-card--accent h-100">
+              <div class="tk-card-icon mb-3">
+                <i class="bi bi-window-stack"></i>
+              </div>
+              <h4 class="tk-card-title">Frontend</h4>
+              <p class="tk-card-body">Languages and frameworks for building responsive, interactive user experiences.</p>
+              <div class="tk-chips mt-auto pt-3">
+                <span class="tk-chip">HTML5</span>
+                <span class="tk-chip">CSS3</span>
+                <span class="tk-chip">JavaScript</span>
+                <span class="tk-chip">Bootstrap</span>
+                <span class="tk-chip">Tkinter</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="col-sm-6 col-xl-3 fade-up" style="--delay:0.3s">
+            <div class="tk-card h-100">
+              <div class="tk-card-icon mb-3">
+                <i class="bi bi-server"></i>
+              </div>
+              <h4 class="tk-card-title">Backend</h4>
+              <p class="tk-card-body">Server-side technologies for building robust APIs and scalable application logic.</p>
+              <div class="tk-chips mt-auto pt-3">
+                <span class="tk-chip">PHP</span>
+                <span class="tk-chip">Python</span>
+                <span class="tk-chip">Flask</span>
+                <span class="tk-chip">C#</span>
+                <span class="tk-chip">Pygame</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="col-sm-6 col-xl-3 fade-up" style="--delay:0.4s">
+            <div class="tk-card tk-card--accent h-100">
+              <div class="tk-card-icon mb-3">
+                <i class="bi bi-database-fill"></i>
+              </div>
+              <h4 class="tk-card-title">Database</h4>
+              <p class="tk-card-body">Data management solutions for structured and unstructured data at any scale.</p>
+              <div class="tk-chips mt-auto pt-3">
+                <span class="tk-chip">MySQL</span>
+                <span class="tk-chip">SQLite</span>
+                <span class="tk-chip">Cisco Packet Tracer</span>
+                <span class="tk-chip">Wireshark</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ EDUCATIONAL BACKGROUND ░░ -->
+    <section id="education" class="ms-education-section py-5">
+      <div class="container py-4">
+
+        <!-- Header -->
+        <div class="row mb-5 fade-up" style="--delay:0.1s">
+          <div class="col-lg-7">
+            <p class="section-eyebrow section-eyebrow--light">Academic path</p>
+            <h2 class="section-title section-title--light">Educational Background</h2>
+          </div>
+          <div class="col-lg-5 d-flex align-items-end">
+            <p class="section-sub section-sub--light">Academic milestones that built my analytical thinking, technical foundation, and creative problem-solving.</p>
+          </div>
+        </div>
+
+        <!-- Timeline: Bootstrap cards in a horizontal row with connecting line -->
+        <div class="edu-timeline-wrap position-relative">
+          <!-- Horizontal connector line (visible on md+) -->
+          <div class="edu-line d-none d-md-block" aria-hidden="true"></div>
+
+          <div class="row g-4 justify-content-center">
+
+            <!-- Card 1 -->
+            <div class="col-md-4 fade-up" style="--delay:0.15s">
+              <div class="edu-card h-100">
+                <div class="edu-card-year">2024 – Present</div>
+                <div class="edu-icon-wrap mb-3">
+                  <i class="bi bi-book"></i>
+                </div>
+                <h5 class="edu-card-title">College</h5>
+                <p class="edu-degree">Polytechnic University of the Philippines - Sto. Tomas</p>
+                <p class="edu-degree">Bachelor of Science in Information Technology</p>
+                <p class="edu-campus"><i class="bi bi-geo-alt-fill me-1"></i>President's Lister</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 fade-up" style="--delay:0.25s">
+              <div class="edu-card h-100">
+                <div class="edu-card-year">2022 – 2024</div>
+                <div class="edu-icon-wrap mb-3">
+                  <i class="bi bi-mortarboard-fill"></i>
+                </div>
+                <h5 class="edu-card-title">Senior High School</h5>
+                <p class="edu-degree">Lyceum of the Philippines University - Laguna</p>
+                <p class="edu-degree">Science, Technology, Engineering & Mathematics (STEM)</p>
+                <p class="edu-campus"><i class="bi bi-award-fill me-1"></i>With Honors</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 fade-up" style="--delay:0.35s">
+              <div class="edu-card h-100">
+                <div class="edu-card-year">2018 – 2022</div>
+                <div class="edu-icon-wrap mb-3">
+                  <i class="bi bi-mortarboard-fill"></i>
+                </div>
+                <h5 class="edu-card-title">Junior High School</h5>
+                <p class="edu-degree">Lyceum of the Philippines University - Laguna</p>
+                <br>
+                <p class="edu-campus"><i class="bi bi-award-fill me-1"></i>With High Honors</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Stacked cards drag script -->
+  <script>
+    (function(){
+      const stacks = document.querySelectorAll('[data-stack]');
+      stacks.forEach(stack => {
+        stack.style.touchAction = 'none';
+        let items = Array.from(stack.querySelectorAll('.stack-item'));
+
+        function refresh() {
+          items.forEach((it, i) => {
+            it.dataset.index = i;
+            it.style.zIndex = String(100 - i);
+            // clear inline transforms so CSS positioning applies
+            it.style.transform = '';
+            const card = it.querySelector('.stack-card');
+            if (card) { card.style.transition = ''; card.style.transform = ''; card.style.opacity = ''; }
+          });
+        }
+
+        refresh();
+
+        let dragging = false, startX = 0, startY = 0, topItem = null, dragBounds = null;
+
+        const pointerDown = (e) => {
+          const top = items[0];
+          if (!top) return;
+          // only start drag if the pointer is within the right half of the section
+          const section = stack.closest('.ms-what-section');
+          if (section) {
+            const sRect = section.getBoundingClientRect();
+            const halfX = sRect.left + (sRect.width / 2);
+            if (e.clientX < halfX) return; // ignore drags from left half
+            // set drag bounds so movement is clamped within the right half
+            dragBounds = { left: Math.round(halfX), right: Math.round(sRect.right) };
+          } else {
+            dragBounds = null;
+          }
+          if (!top.contains(e.target)) return;
+          dragging = true;
+          startX = e.clientX; startY = e.clientY;
+          topItem = top;
+          topItem.classList.add('dragging');
+          topItem.setPointerCapture && topItem.setPointerCapture(e.pointerId);
+        };
+
+        const pointerMove = (e) => {
+          if (!dragging || !topItem) return;
+          // clamp clientX within dragBounds if available
+          let clientX = e.clientX;
+          if (dragBounds) {
+            clientX = Math.max(dragBounds.left, Math.min(dragBounds.right, clientX));
+          }
+          const dx = clientX - startX;
+          const dy = e.clientY - startY;
+          const rotate = dx * 0.04;
+          topItem.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) rotate(${rotate}deg)`;
+          topItem.style.opacity = `${Math.max(0.3, 1 - Math.abs(dx)/600)}`;
+          // reveal next card subtly
+          if (items[1]) {
+            const sign = dx > 0 ? 1 : -1;
+            const reveal = Math.min(36, Math.abs(dx) * 0.12);
+            items[1].style.transform = `translate(calc(-50% + ${22 + sign*reveal}px), -50%) scale(${0.99 + Math.min(0.03, Math.abs(dx)/1500)})`;
+          }
+        };
+
+        const end = (e) => {
+          if (!dragging || !topItem) return;
+          dragging = false;
+          try { topItem.releasePointerCapture && topItem.releasePointerCapture(e.pointerId); } catch(e){}
+          topItem.classList.remove('dragging');
+          // use clamped clientX (if dragBounds were set during pointerDown)
+          let clientX = e.clientX;
+          if (dragBounds) clientX = Math.max(dragBounds.left, Math.min(dragBounds.right, clientX));
+          const dx = clientX - startX;
+          const threshold = 80;
+          if (Math.abs(dx) > threshold) {
+            const dir = dx > 0 ? 1 : -1;
+            if (dir > 0) {
+              // fling off to the right (existing behaviour)
+              topItem.style.transition = 'transform 360ms ease, opacity 360ms ease';
+              topItem.style.transform = `translate(calc(-50% + ${dir*1100}px), calc(-50% + 0px)) rotate(${dir*24}deg)`;
+              topItem.style.opacity = '0';
+              setTimeout(() => {
+                const moved = items.shift();
+                items.push(moved);
+                items.forEach(it => { it.style.transition=''; it.style.transform=''; it.style.opacity=''; });
+                refresh();
+              }, 380);
+            } else {
+              // leftward drags: fade and stack to bottom without flying past the midline
+              topItem.style.transition = 'transform 320ms ease, opacity 320ms ease';
+              topItem.style.transform = `translate(calc(-50% - 120px), calc(-50% + 0px)) rotate(-6deg)`;
+              topItem.style.opacity = '0';
+              setTimeout(() => {
+                const moved = items.shift();
+                items.push(moved);
+                items.forEach(it => { it.style.transition=''; it.style.transform=''; it.style.opacity=''; });
+                refresh();
+              }, 340);
+            }
+          } else {
+            // snap back to original
+            topItem.style.transition = 'transform 260ms var(--transition), opacity 260ms ease';
+            topItem.style.transform = '';
+            topItem.style.opacity = '';
+            if (items[1]) items[1].style.transform = '';
+          }
+          topItem = null;
+          dragBounds = null;
+        };
+
+        stack.addEventListener('pointerdown', pointerDown);
+        stack.addEventListener('pointermove', pointerMove);
+        stack.addEventListener('pointerup', end);
+        stack.addEventListener('pointercancel', end);
+        stack.addEventListener('pointerleave', end);
+
+        // ensure order on load
+        window.addEventListener('load', refresh);
+        window.addEventListener('resize', () => { setTimeout(refresh, 120); });
+      });
+    })();
+  </script>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="ms-footer py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+          <img src="LogoB.svg" alt="Mariane Louise Sanchez logo" class="footer-logo">
+        </div>
+        <div class="col-md-8 text-center text-md-end">
+          <p class="footer-copy mb-0">© 2026 Mariane Louise Sanchez<br>
+          <span class="footer-copy-sub">Crafted with care &amp; curiosity.</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scroll-reveal animations -->
+  <script>
+    const fadeEls = document.querySelectorAll('.fade-up, .fade-right, .fade-left');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const delay = el.style.getPropertyValue('--delay') || '0s';
+          el.style.transitionDelay = delay;
+          el.classList.add('visible');
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.12 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+  <script>
+    // Floating icons: show when portrait is hovered; icons spread out from the portrait and remain until individually hovered (removed)
+    (function(){
+      const iconsContainer = document.querySelector('.floating-icons');
+      const portrait = document.querySelector('.portrait-wrap');
+      if (!iconsContainer || !portrait) return;
+
+      const icons = Array.from(iconsContainer.querySelectorAll('.fi'));
+      const portraitImg = portrait.querySelector('.portrait-img') || portrait;
+
+      // Utility to animate icons from portrait center to their final CSS positions
+      function showIconsFromPortrait(){
+        if (iconsContainer.classList.contains('visible')) return; // already shown
+        const pRect = portraitImg.getBoundingClientRect();
+        const pCenter = { x: pRect.left + pRect.width/2, y: pRect.top + pRect.height/2 };
+        icons.forEach(icon => {
+          const iRect = icon.getBoundingClientRect();
+          const iCenter = { x: iRect.left + iRect.width/2, y: iRect.top + iRect.height/2 };
+          const dx = pCenter.x - iCenter.x;
+          const dy = pCenter.y - iCenter.y;
+          icon.style.transform = `translate(${dx}px, ${dy}px) scale(0.6)`;
+          icon.style.opacity = '0';
+        });
+        void iconsContainer.offsetWidth;
+        iconsContainer.classList.add('visible');
+        icons.forEach((icon, i) => {
+          setTimeout(() => {
+            icon.style.transition = 'transform 480ms cubic-bezier(.2,.9,.3,1), opacity 320ms ease';
+            icon.style.transform = 'none';
+            icon.style.opacity = '1';
+          }, i * 70);
+        });
+      }
+
+      // Detect touch devices
+      const isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0);
+
+      // Desktop: show icons on hover
+      portrait.addEventListener('mouseenter', () => {
+        if (!isTouch) showIconsFromPortrait();
+      });
+
+      // Touch: show icons on tap (do not auto-hide)
+      if (isTouch) {
+        portrait.addEventListener('click', (e) => {
+          if (!iconsContainer.classList.contains('visible')) {
+            showIconsFromPortrait();
+          }
+        });
+      }
+
+      // Do NOT hide icons on portrait mouseleave — they remain until individually removed
+
+      // Each icon is removed when that icon is hovered (desktop) or tapped (touch)
+      icons.forEach(icon => {
+        const removeFn = () => {
+          icon.style.transition = 'opacity 320ms ease, transform 240ms ease';
+          icon.style.opacity = '0';
+          icon.style.transform = 'scale(0.6)';
+          setTimeout(()=> icon.remove(), 360);
+        };
+        icon.addEventListener('mouseenter', removeFn, { once: true });
+        icon.addEventListener('click', removeFn, { once: true });
+      });
+    })();
+  </script>
+</body>
+</html>

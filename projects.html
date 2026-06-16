@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Mariane Louise Sanchez</title>
+
+  <link rel="icon" href="LogoR.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Pinyon+Script&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="static/style.css">
+
+  
+</head>
+<body>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar navbar-expand-lg ms-navbar fixed-top">
+    <div class="container-fluid px-4 px-lg-5">
+      <a class="navbar-brand ms-brand" href="index.html">
+        <img src="LogoR.svg" alt="Mariane Louise Sanchez logo" class="navbar-logo">
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMain"
+              aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-4" style="color:var(--maroon)"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMain">
+        <ul class="navbar-nav align-items-center gap-4">
+          <li class="nav-item"><a class="nav-link ms-link" href="index.html">About</a></li>
+          <li class="nav-item"><a class="nav-link ms-link active" href="projects.html">Projects</a></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ░░ PAGE HERO ░░ -->
+  <section class="proj-hero">
+    <div class="proj-hero-orb-1" aria-hidden="true"></div>
+    <div class="proj-hero-orb-2" aria-hidden="true"></div>
+    <div class="container">
+      <div class="fade-up" style="--delay:0.05s">
+        <p class="proj-page-eyebrow"><i class="bi bi-folder2-open me-2"></i>Collection of Works</p>
+        <h1 class="proj-page-title">My Projects</h1>
+        <p class="proj-page-sub">Here are my selected works in web development, product design, and full-stack development that I have built myself and with my group. My projects reflect my passion for creating intuitive and engaging digital experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ COLLAGE GRID ░░ -->
+  <section class="proj-collage-section">
+    <div class="container">
+
+      <div class="proj-count-strip fade-up" style="--delay:0.05s">
+        <div class="proj-count-line"></div>
+        <span class="proj-count-text">6 Projects</span>
+        <div class="proj-count-line"></div>
+      </div>
+
+      <!-- Masonry collage — cards appear one by one as you scroll -->
+      <div class="proj-masonry">
+
+        <!-- ① Bloom POS -->
+        <div class="proj-tile">
+          <div class="proj-card" data-bs-toggle="modal" data-bs-target="#modalBloomPOS" role="button" tabindex="0" aria-label="View Bloom POS project">
+            <div class="proj-thumb">
+              <i class="proj-thumb-icon bi bi-display"></i>
+              <span class="proj-thumb-label">Preview Image</span>
+              <div class="proj-overlay">
+                <div class="proj-overlay-inner">
+                  <i class="bi bi-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-card-footer">
+              <p class="proj-card-name">Bloom POS</p>
+              <p class="proj-card-tag">Web Application &nbsp;·&nbsp; Group Project</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ② Cryptfall -->
+        <div class="proj-tile">
+          <div class="proj-card" data-bs-toggle="modal" data-bs-target="#modalCryptfall" role="button" tabindex="0" aria-label="View Cryptfall project">
+            <div class="proj-thumb">
+              <i class="proj-thumb-icon bi bi-brush"></i>
+              <span class="proj-thumb-label">Preview Image</span>
+              <div class="proj-overlay">
+                <div class="proj-overlay-inner">
+                  <i class="bi bi-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-card-footer">
+              <p class="proj-card-name">Cryptfall</p>
+              <p class="proj-card-tag">Pygame &amp; Branding &nbsp;·&nbsp; Group Project</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ③ Maise -->
+        <div class="proj-tile">
+          <div class="proj-card" data-bs-toggle="modal" data-bs-target="#modalMaise" role="button" tabindex="0" aria-label="View Maise project">
+            <div class="proj-thumb">
+              <i class="proj-thumb-icon bi bi-bar-chart-line"></i>
+              <span class="proj-thumb-label">Preview Image</span>
+              <div class="proj-overlay">
+                <div class="proj-overlay-inner">
+                  <i class="bi bi-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-card-footer">
+              <p class="proj-card-name">Maise</p>
+              <p class="proj-card-tag">E-commerce Website &nbsp;·&nbsp; Individual</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ④ La Lou's Bakeshop -->
+        <div class="proj-tile">
+          <div class="proj-card" data-bs-toggle="modal" data-bs-target="#modalLaLou" role="button" tabindex="0" aria-label="View La Lou's Bakeshop project">
+            <div class="proj-thumb">
+              <i class="proj-thumb-icon bi bi-egg-fried"></i>
+              <span class="proj-thumb-label">Preview Image</span>
+              <div class="proj-overlay">
+                <div class="proj-overlay-inner">
+                  <i class="bi bi-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-card-footer">
+              <p class="proj-card-name">La Lou's Bakeshop</p>
+              <p class="proj-card-tag">E-commerce Website &nbsp;·&nbsp; Individual</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ⑤ iPhone Pro Max Web Design -->
+        <div class="proj-tile">
+          <div class="proj-card" data-bs-toggle="modal" data-bs-target="#modalIphone" role="button" tabindex="0" aria-label="View iPhone Pro Max Web Design project">
+            <div class="proj-thumb">
+              <i class="proj-thumb-icon bi bi-gem"></i>
+              <span class="proj-thumb-label">Preview Image</span>
+              <div class="proj-overlay">
+                <div class="proj-overlay-inner">
+                  <i class="bi bi-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-card-footer">
+              <p class="proj-card-name">iPhone Pro Max Web Design</p>
+              <p class="proj-card-tag">Web Design &amp; Interface &nbsp;·&nbsp; Individual</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ⑥ Forms (CRUD App) -->
+        <div class="proj-tile">
+          <div class="proj-card" data-bs-toggle="modal" data-bs-target="#modalForms" role="button" tabindex="0" aria-label="View Forms project">
+            <div class="proj-thumb">
+              <i class="proj-thumb-icon bi bi-cart3"></i>
+              <span class="proj-thumb-label">Preview Image</span>
+              <div class="proj-overlay">
+                <div class="proj-overlay-inner">
+                  <i class="bi bi-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-card-footer">
+              <p class="proj-card-name">Forms (CRUD)</p>
+              <p class="proj-card-tag">CRUD Application &nbsp;·&nbsp; Individual</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /masonry -->
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════
+       MODALS
+  ══════════════════════════════════ -->
+
+  <!-- ① Bloom POS -->
+  <div class="modal fade proj-modal" id="modalBloomPOS" tabindex="-1" aria-labelledby="labelBloomPOS" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <!-- floating close btn -->
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="proj-modal-grid">
+            <!-- Carousel -->
+            <div class="proj-modal-media">
+              <div id="slideshowBloom" class="proj-slideshow h-100"></div>
+            </div>
+            <!-- Detail panel -->
+            <div class="proj-modal-details">
+              <h2 class="modal-proj-title" id="labelBloomPOS">Bloom POS</h2>
+              <p class="modal-proj-desc">This system is a web-based Point of Sale system designed to streamline flower shop operations mainly transactions and inventory management by centralising order tracking and sales reporting into a single, user-friendly platform.</p>
+              <hr class="modal-divider">
+              <div class="modal-meta">
+                <div class="modal-meta-item">
+                  <i class="bi bi-layers"></i>
+                  <div><span class="modal-meta-key">Type:</span><span class="modal-meta-val">Web Application — Group Project</span></div>
+                </div>
+                <div class="modal-meta-item">
+                  <i class="bi bi-people"></i>
+                  <div><span class="modal-meta-key">Credits:</span><span class="modal-meta-val">Mojares, Quimio, Recaña &amp; Tolentino</span></div>
+                </div>
+                <div class="modal-meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <div><span class="modal-meta-key">Year:</span><span class="modal-meta-val">2026</span></div>
+                </div>
+              </div>
+              <hr class="modal-divider">
+              <div class="lang-chips">
+                <span class="lang-chip">HTML</span>
+                <span class="lang-chip">CSS</span>
+                <span class="lang-chip">JavaScript</span>
+                <span class="lang-chip">PHP</span>
+                <span class="lang-chip">phpMyAdmin</span>
+                <span class="lang-chip">MySQL</span>
+              </div>
+              <div class="modal-cta-row">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cryptfall -->
+  <div class="modal fade proj-modal" id="modalCryptfall" tabindex="-1" aria-labelledby="labelCryptfall" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="proj-modal-grid">
+            <div class="proj-modal-media">
+              <div id="slideshowCryptfall" class="proj-slideshow h-100"></div>
+            </div>
+            <div class="proj-modal-details">
+              <h2 class="modal-proj-title" id="labelCryptfall">Cryptfall</h2>
+              <p class="modal-proj-desc">This is a 2D pixelated interactive game designed for IT students to learn computer security by experiencing cybersecurity threats and defenses firsthand instead of reading about them which was created using Pygame.</p>
+              <hr class="modal-divider">
+              <div class="modal-meta">
+                <div class="modal-meta-item">
+                  <i class="bi bi-layers"></i>
+                  <div><span class="modal-meta-key">Type:</span><span class="modal-meta-val">Pygame — Group Project</span></div>
+                </div>
+                <div class="modal-meta-item">
+                  <i class="bi bi-people"></i>
+                  <div><span class="modal-meta-key">Credits:</span><span class="modal-meta-val">Mojares, Quimio, Recaña &amp; Tolentino</span></div>
+                </div>
+                <div class="modal-meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <div><span class="modal-meta-key">Year:</span><span class="modal-meta-val">2025</span></div>
+                </div>
+              </div>
+              <hr class="modal-divider">
+              <div class="lang-chips">
+                <span class="lang-chip">Python</span>
+                <span class="lang-chip">Pygame</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Maise -->
+  <div class="modal fade proj-modal" id="modalMaise" tabindex="-1" aria-labelledby="labelMaise" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="proj-modal-grid">
+            <div class="proj-modal-media">
+              <div id="slideshowMaise" class="proj-slideshow h-100"></div>
+            </div>
+            <div class="proj-modal-details">
+              <h2 class="modal-proj-title" id="labelMaise">Maise</h2>
+              <p class="modal-proj-desc">An e-commerce website that sells apparel targeted for women. This project showcases a modern, responsive design with a focus on user experience and seamless navigation.</p>
+              <hr class="modal-divider">
+              <div class="modal-meta">
+                <div class="modal-meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <div><span class="modal-meta-key">Year:</span><span class="modal-meta-val">2025</span></div>
+                </div>
+              </div>
+              <hr class="modal-divider">
+              <div class="lang-chips">
+                <span class="lang-chip">HTML</span>
+                <span class="lang-chip">CSS</span>
+                <span class="lang-chip">JavaScript</span>
+                <span class="lang-chip">Flask</span>
+              </div>
+              <div class="modal-cta-row">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- La Lou's Bakeshop -->
+  <div class="modal fade proj-modal" id="modalLaLou" tabindex="-1" aria-labelledby="labelLaLou" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="proj-modal-grid">
+            <div class="proj-modal-media">
+              <div id="slideshowLaLou" class="proj-slideshow h-100"></div>
+            </div>
+            <div class="proj-modal-details">
+              <h2 class="modal-proj-title" id="labelLaLou">La Lou's Bakeshop</h2>
+              <p class="modal-proj-desc">An e-commerce website that offers a variety of baked goods where customers can browse, select, and purchase items online. The checkout process is streamlined into a single, straightforward form where users can quickly enter their shipping and payment details to finalize their order.</p>
+              <hr class="modal-divider">
+              <div class="modal-meta">
+                <div class="modal-meta-item">
+                  <i class="bi bi-layers"></i>
+                  <div><span class="modal-meta-key">Type:</span><span class="modal-meta-val">E-commerce Website — Individual</span></div>
+                </div>
+                <div class="modal-meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <div><span class="modal-meta-key">Year:</span><span class="modal-meta-val">2026</span></div>
+                </div>
+              </div>
+              <hr class="modal-divider">
+              <div class="lang-chips">
+                <span class="lang-chip">PHP</span>
+                <span class="lang-chip">HTML</span>
+                <span class="lang-chip">CSS</span>
+                <span class="lang-chip">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- Iphone Pro Max Web Design -->
+  <div class="modal fade proj-modal" id="modalIphone" tabindex="-1" aria-labelledby="labelIphone" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+          <div class="modal-body">
+            <div class="proj-modal-grid">
+              <div class="proj-modal-media">
+                <div id="slideshowIphone" class="proj-slideshow h-100"></div>
+              </div>
+                <div class="proj-modal-details">
+                  <h2 class="modal-proj-title" id="labelIphone">Iphone Pro Max Web Design</h2>
+                      <p class="modal-proj-desc">A design exploration for the latest iPhone model, focusing on a sleek and modern interface. The design emphasizes clean lines and intuitive user experience.</p>
+                      <hr class="modal-divider">
+                      <div class="modal-meta">
+                        <div class="modal-meta-item">
+                          <i class="bi bi-layers"></i>
+                          <div><span class="modal-meta-key">Type:</span><span class="modal-meta-val">Web Design &amp; Interface — Individual</span></div>
+                        </div>
+                        <div class="modal-meta-item">
+                          <i class="bi bi-calendar3"></i>
+                          <div><span class="modal-meta-key">Year:</span><span class="modal-meta-val">2026</span></div>
+                        </div>
+                      </div>
+                      <hr class="modal-divider">
+                      <div class="lang-chips">
+                        <span class="lang-chip">Figma</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Windows Forms App -->
+          <div class="modal fade proj-modal" id="modalForms" tabindex="-1" aria-labelledby="labelGreenCart" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="proj-modal-grid">
+                    <div class="proj-modal-media">
+                      <div id="slideshowWindows" class="proj-slideshow h-100"></div>
+                    </div>
+                    <div class="proj-modal-details">
+                      <h2 class="modal-proj-title" id="labelForms">Forms</h2>
+                      <p class="modal-proj-desc">This is a Database-Driven CRUD Application that allows users to create, read, update, and delete data in a database.</p>
+                      <hr class="modal-divider">
+                      <div class="modal-meta">
+                        <div class="modal-meta-item">
+                          <i class="bi bi-layers"></i>
+                          <div><span class="modal-meta-key">Type:</span><span class="modal-meta-val">CRUD Application —Individual</span></div>
+                        </div>
+                        <div class="modal-meta-item">
+                          <i class="bi bi-calendar3"></i>
+                          <div><span class="modal-meta-key">Year:</span><span class="modal-meta-val">2026</span></div>
+                        </div>
+                      </div>
+                      <hr class="modal-divider">
+                      <div class="lang-chips">
+                        <span class="lang-chip">C#</span>
+                        <span class="lang-chip">SQL</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+    <!-- ░░ FOOTER ░░ -->
+          <footer class="ms-footer py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+          <img src="LogoB.svg" alt="Mariane Louise Sanchez logo" class="footer-logo">
+        </div>
+        <div class="col-md-8 text-center text-md-end">
+          <p class="footer-copy mb-0">© 2026 Mariane Louise Sanchez<br>
+          <span class="footer-copy-sub">Crafted with care &amp; curiosity.</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Navbar scroll shadow -->
+  <script>
+    const navbar = document.querySelector('.ms-navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+  </script>
+
+  <!-- Hero fade-up (existing pattern) -->
+  <script>
+    const heroFades = document.querySelectorAll('.fade-up');
+    const heroObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          el.style.transitionDelay = el.style.getPropertyValue('--delay') || '0s';
+          el.classList.add('visible');
+          heroObs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.10 });
+    heroFades.forEach(el => heroObs.observe(el));
+  </script>
+
+  <!-- Collage card scroll-reveal: each card pops in as it enters viewport -->
+  <script>
+    (function () {
+      const cards = document.querySelectorAll('.proj-card');
+
+      const cardObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // stagger: small delay per card index so they don't all fire at once
+            const card = entry.target;
+            const idx = Array.from(cards).indexOf(card);
+            const stagger = Math.min(idx * 90, 300); // max 300ms offset
+            setTimeout(() => {
+              card.classList.add('in-view');
+            }, stagger);
+            cardObs.unobserve(card);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      cards.forEach(card => cardObs.observe(card));
+    })();
+  </script>
+
+  <!-- Keyboard: allow Enter/Space to open modal on card (accessibility) -->
+  <script>
+    document.querySelectorAll('.proj-card[data-bs-toggle="modal"]').forEach(card => {
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          card.click();
+        }
+      });
+    });
+  </script>
+
+  <!-- Dynamic slideshow injector -->
+  <script>
+    (function(){
+      const base = 'static/images/';
+
+      function range(a,b){ const r=[]; for(let i=a;i<=b;i++) r.push(i + '.png'); return r; }
+
+      const map = {
+        '#modalBloomPOS': { container: 'slideshowBloom', assets: ['2.png','3.png','4.png','5.png','6.png','7.png','8.png','9.png'] },
+        '#modalLaLou':   { container: 'slideshowLaLou', assets: ['10.png','11.png','12.png','13.png','14.png','15.png','16.png','17.png','18.png'] },
+        '#modalCryptfall': { container: 'slideshowCryptfall', assets: ['19.png','20.png','22.png','23.png','24.png','25.png','26.png'] },
+        '#modalMaise':   { container: 'slideshowMaise', assets: range(27,44) },
+        '#modalIphone':  { container: 'slideshowIphone', assets: range(45,52) },
+        '#modalForms':   { container: 'slideshowWindows', assets: ['53.png','54.mp4'] }
+      };
+
+      const timers = new Map();
+
+      Object.keys(map).forEach(modalSel => {
+        const conf = map[modalSel];
+        const container = document.getElementById(conf.container);
+        if (!container) return;
+
+        container.innerHTML = '';
+        conf.slides = [];
+        conf.current = 0;
+
+        conf.assets.forEach((asset, idx) => {
+          const isVideo = asset.toLowerCase().endsWith('.mp4');
+          const slide = document.createElement('div');
+          slide.className = 'proj-slide h-100' + (idx===0 ? ' active' : '');
+          slide.dataset.index = idx;
+
+          if (isVideo) {
+            const vid = document.createElement('video');
+            vid.controls = true; vid.className = 'proj-slide-media'; vid.setAttribute('playsinline','');
+            const src = document.createElement('source'); src.src = base + asset; src.type = 'video/mp4'; vid.appendChild(src);
+            slide.appendChild(vid);
+          } else {
+            const img = document.createElement('img');
+            img.className = 'proj-slide-media img-fluid'; img.alt = '';
+            img.src = base + asset;
+            img.addEventListener('error', () => { slide.remove(); });
+            slide.appendChild(img);
+          }
+
+          container.appendChild(slide);
+          conf.slides.push(slide);
+        });
+
+        // determine autoplay and interval
+        const hasVideo = conf.assets.some(a => a.toLowerCase().endsWith('.mp4'));
+        const auto = !hasVideo && conf.slides.length > 1;
+        const interval = 3000;
+        // add prev/next buttons
+        const makeBtn = (dir) => {
+          const btn = document.createElement('button');
+          btn.type = 'button'; btn.className = 'proj-nav proj-nav--' + dir; btn.setAttribute('aria-label', dir);
+          btn.innerHTML = (dir === 'prev') ? '<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1.5 4 8l6.5 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>' : '<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 1.5 12 8 5.5 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>';
+          return btn;
+        };
+
+        const btnPrev = makeBtn('prev');
+        const btnNext = makeBtn('next');
+        container.appendChild(btnPrev);
+        container.appendChild(btnNext);
+
+        const showIndex = (newIndex) => {
+          if (!conf.slides || conf.slides.length===0) return;
+          newIndex = (newIndex + conf.slides.length) % conf.slides.length;
+          conf.slides.forEach((s, idx) => s.classList.toggle('active', idx===newIndex));
+          conf.current = newIndex;
+        };
+
+        
+        const startAuto = () => {
+          if (timers.get(modalSel)) clearInterval(timers.get(modalSel));
+          if (!auto) return;
+          const id = setInterval(() => {
+            showIndex((conf.current + 1) % conf.slides.length);
+          }, interval);
+          timers.set(modalSel, id);
+        };
+
+        const stopAuto = () => {
+          const id = timers.get(modalSel); if (id) { clearInterval(id); timers.delete(modalSel); }
+        };
+
+        btnPrev.addEventListener('click', () => {
+          showIndex(conf.current - 1);
+          if (auto) { stopAuto(); startAuto(); }
+        });
+        btnNext.addEventListener('click', () => {
+          showIndex(conf.current + 1);
+          if (auto) { stopAuto(); startAuto(); }
+        });
+
+        // modal show/hide handlers — use Bootstrap modal events
+        const modalEl = document.querySelector(modalSel);
+        if (!modalEl) return;
+
+        
+        modalEl.addEventListener('shown.bs.modal', () => {
+          // reset to first when opened
+          showIndex(0);
+          if (auto) startAuto();
+        });
+
+        modalEl.addEventListener('hidden.bs.modal', () => {
+          stopAuto();
+          // reset to first
+          showIndex(0);
+          // if video present, pause any video
+          conf.slides.forEach(s => {
+            const v = s.querySelector('video'); if (v) try{ v.pause(); v.currentTime = 0; } catch(e){}
+          });
+        });
+      });
+
+      // Inject preview images into cards (first asset)
+      document.querySelectorAll('.proj-card[data-bs-toggle="modal"]').forEach(card => {
+        const target = card.getAttribute('data-bs-target');
+        const conf = map[target];
+        if (!conf || !conf.assets || conf.assets.length===0) return;
+        const first = conf.assets[0];
+        const thumb = card.querySelector('.proj-thumb');
+        if (!thumb) return;
+        const icon = thumb.querySelector('.proj-thumb-icon'); if (icon) icon.remove();
+        const label = thumb.querySelector('.proj-thumb-label'); if (label) label.remove();
+        const img = document.createElement('img'); img.className = 'proj-thumb-img'; img.alt = '';
+        img.src = base + first; thumb.insertBefore(img, thumb.firstChild);
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
