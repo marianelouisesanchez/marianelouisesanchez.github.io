@@ -159,7 +159,7 @@
     document.querySelectorAll('.proj-card').forEach(card => cardObserver.observe(card));
 
     const slideshow = document.getElementById('slideshowBento');
-    const projectImages = ['static/images/55.png'];
+    const projectImages = ['55.png'];
     const slides = projectImages.map((image, index) => {
       const slide = document.createElement('div');
       slide.className = `proj-slide h-100${index === 0 ? ' active' : ''}`;
@@ -187,9 +187,10 @@
     };
     const startSlideshow = () => {
       stopSlideshow();
+      if (slides.length < 2) return;
       slideshowTimer = window.setInterval(() => showSlide(currentSlide + 1), 3000);
     };
-    ['prev', 'next'].forEach(direction => {
+    (slides.length > 1 ? ['prev', 'next'] : []).forEach(direction => {
       const button = document.createElement('button');
       button.type = 'button';
       button.className = `proj-nav proj-nav--${direction}`;
