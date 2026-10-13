@@ -159,7 +159,7 @@
     document.querySelectorAll('.proj-card').forEach(card => cardObserver.observe(card));
 
     const slideshow = document.getElementById('slideshowBento');
-    const projectImages = ['2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png'];
+    const projectImages = ['static/images/55.png'];
     const slides = projectImages.map((image, index) => {
       const slide = document.createElement('div');
       slide.className = `proj-slide h-100${index === 0 ? ' active' : ''}`;

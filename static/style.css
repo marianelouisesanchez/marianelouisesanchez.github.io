@@ -1246,21 +1246,26 @@ img { max-width: 100%; display: block; }
 .proj-masonry {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-auto-rows: 260px;
+  grid-auto-rows: 240px;
   gap: 16px;
 }
-.proj-tile { display: block; min-width: 0; min-height: 0; }
+.proj-tile {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  height: 240px;
+  grid-column: span 1;
+  grid-row: span 1;
+}
 
 @media (max-width: 991.98px) {
   .proj-masonry {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: 240px;
   }
 }
 @media (max-width: 575.98px) {
   .proj-masonry {
     grid-template-columns: 1fr;
-    grid-auto-rows: 220px;
   }
 }
 
