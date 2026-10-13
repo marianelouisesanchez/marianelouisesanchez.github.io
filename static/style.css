@@ -1,10 +1,3 @@
-/* ============================================================
-   MARIANE LOUISE SANCHEZ — Portfolio Stylesheet
-   Palette: Deep Maroon · Warm Beige · Soft Rose · Ivory
-   Fonts: Cormorant Garamond (display) · Pinyon Script (brand) · DM Sans (body)
-   ============================================================ */
-
-/* ── TOKENS ── */
 :root {
   --maroon-deep:  #4A1520;
   --maroon:       #6D2932;
@@ -29,7 +22,6 @@
   --nav-height: 80px; /* used to keep floating UI below the fixed navbar */
 }
 
-/* ── RESET & BASE ── */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -41,7 +33,6 @@ body {
 }
 img { max-width: 100%; display: block; }
 
-/* When dragging stack cards, prevent text selection and show grabbing cursor */
 .ms-dragging, .ms-dragging * {
   -webkit-user-select: none !important;
   -moz-user-select: none !important;
@@ -50,7 +41,6 @@ img { max-width: 100%; display: block; }
   cursor: grabbing !important;
 }
 
-/* ── SCROLL-REVEAL ── */
 .fade-up {
   opacity: 0;
   transform: translateY(32px);
@@ -60,7 +50,7 @@ img { max-width: 100%; display: block; }
   opacity: 1;
   transform: translateY(0);
 }
-/* Slide-from-right reveal used for the card stack */
+
 .fade-right {
   opacity: 0;
   transform: translateX(80px);
@@ -71,7 +61,7 @@ img { max-width: 100%; display: block; }
   transform: translateX(0);
 }
 
-/* Slide-from-left reveal used for the left column text */
+
 .fade-left {
   opacity: 0;
   transform: translateX(-80px);
@@ -1413,3 +1403,5 @@ img { max-width: 100%; display: block; }
 .modal {
   z-index: 1420 !important;
 }
+
+/*this is a comment*/

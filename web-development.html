@@ -59,9 +59,9 @@
 
       <div class="proj-masonry">
         <div class="proj-tile">
-          <a class="proj-card text-decoration-none" href="#modalBloomPOS" data-bs-toggle="modal" data-bs-target="#modalBloomPOS" aria-label="View Bloom POS project details">
+          <a class="proj-card text-decoration-none" href="#modalBento" data-bs-toggle="modal" data-bs-target="#modalBento" aria-label="View Bento Box project details">
             <div class="proj-thumb">
-              <img class="proj-thumb-img" src="static/images/2.png" alt="Bloom POS project preview">
+              <img class="proj-thumb-img" src="static/images/55.png" alt="Bento Box project preview">
               <div class="proj-overlay"><div class="proj-overlay-inner"><i class="bi bi-eye"></i><span>View Project</span></div></div>
             </div>
             <div class="proj-card-footer">
@@ -74,7 +74,7 @@
     </div>
   </section>
 
-  <div class="modal fade proj-modal" id="modalBloomPOS" tabindex="-1" aria-labelledby="labelBloomPOS" aria-hidden="true">
+  <div class="modal fade proj-modal" id="modalBento" tabindex="-1" aria-labelledby="labelBento" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -83,11 +83,11 @@
         <div class="modal-body">
           <div class="proj-modal-grid">
             <div class="proj-modal-media">
-              <div id="slideshowBloom" class="proj-slideshow h-100"></div>
+              <div id="slideshowBento" class="proj-slideshow h-100"></div>
             </div>
             <div class="proj-modal-details">
-              <h2 class="modal-proj-title" id="labelBloomPOS">Flower Collage</h2>
-              <p class="modal-proj-desc">This displays a collection of my favorite flowers using a bento box layout.</p>
+              <h2 class="modal-proj-title" id="labelBento">My College Adventure</h2>
+              <p class="modal-proj-desc">This displays a collection of my adventures during college.</p>
               <hr class="modal-divider">
               <div class="modal-meta">
                 <div class="modal-meta-item">
@@ -106,7 +106,7 @@
                 <span class="lang-chip">JavaScript</span>
                 <span class="lang-chip">Bootstrap</span>
               </div>
-              <a class="btn btn-outline-light rounded-pill proj-link-btn" href="https://example.com" target="_blank" rel="noopener noreferrer">
+              <a class="btn btn-outline-light rounded-pill proj-link-btn" href="https://marianelouisesanchez.github.io/web-development/Bento_Box/" target="_blank" rel="noopener noreferrer">
                 Project Link <i class="bi bi-box-arrow-up-right ms-2" aria-hidden="true"></i>
               </a>
             </div>
@@ -158,14 +158,14 @@
     }, { threshold: 0.12 });
     document.querySelectorAll('.proj-card').forEach(card => cardObserver.observe(card));
 
-    const slideshow = document.getElementById('slideshowBloom');
+    const slideshow = document.getElementById('slideshowBento');
     const projectImages = ['2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png'];
     const slides = projectImages.map((image, index) => {
       const slide = document.createElement('div');
       slide.className = `proj-slide h-100${index === 0 ? ' active' : ''}`;
       const img = document.createElement('img');
       img.className = 'proj-slide-media img-fluid';
-      img.alt = `Bloom POS project screenshot ${index + 1}`;
+      img.alt = `Bento Box project screenshot ${index + 1}`;
       img.src = `static/images/${image}`;
       img.addEventListener('error', () => slide.remove());
       slide.appendChild(img);
@@ -204,9 +204,9 @@
       slideshow.appendChild(button);
     });
 
-    const bloomModal = document.getElementById('modalBloomPOS');
-    bloomModal.addEventListener('shown.bs.modal', startSlideshow);
-    bloomModal.addEventListener('hidden.bs.modal', () => {
+    const bentoModal = document.getElementById('modalBento');
+    bentoModal.addEventListener('shown.bs.modal', startSlideshow);
+    bentoModal.addEventListener('hidden.bs.modal', () => {
       stopSlideshow();
       showSlide(0);
     });
