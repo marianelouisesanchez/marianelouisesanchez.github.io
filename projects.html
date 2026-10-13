@@ -50,6 +50,9 @@
         <p class="proj-page-eyebrow"><i class="bi bi-folder2-open me-2"></i>Collection of Works</p>
         <h1 class="proj-page-title">My Projects</h1>
         <p class="proj-page-sub">Here are my selected works in web development, product design, and full-stack development that I have built myself and with my group. My projects reflect my passion for creating intuitive and engaging digital experiences.</p>
+        <a class="btn proj-back-btn btn-outline-light rounded-pill" href="web-development.html">
+          <i class="bi bi-code-slash me-2" aria-hidden="true"></i>Web Development
+        </a>
       </div>
     </div>
   </section>
@@ -461,6 +464,15 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const linkedModal = window.location.hash
+      ? document.getElementById(window.location.hash.slice(1))
+      : null;
+    if (linkedModal && linkedModal.classList.contains('modal')) {
+      bootstrap.Modal.getOrCreateInstance(linkedModal).show();
+    }
+  </script>
 
   <!-- Navbar scroll shadow -->
   <script>

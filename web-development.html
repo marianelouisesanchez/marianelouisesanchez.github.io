@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Development — Mariane Louise Sanchez</title>
+
+  <link rel="icon" href="LogoR.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Pinyon+Script&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg ms-navbar fixed-top">
+    <div class="container-fluid px-4 px-lg-5">
+      <a class="navbar-brand ms-brand" href="index.html">
+        <img src="LogoR.svg" alt="Mariane Louise Sanchez logo" class="navbar-logo">
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMain"
+              aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-4" style="color:var(--maroon)"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMain">
+        <ul class="navbar-nav align-items-center gap-4">
+          <li class="nav-item"><a class="nav-link ms-link" href="index.html">About</a></li>
+          <li class="nav-item"><a class="nav-link ms-link active" href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="proj-hero">
+    <div class="proj-hero-orb-1" aria-hidden="true"></div>
+    <div class="proj-hero-orb-2" aria-hidden="true"></div>
+    <div class="container">
+      <div class="fade-up" style="--delay:0.05s">
+        <p class="proj-page-eyebrow"><i class="bi bi-code-slash me-2"></i>Selected Works</p>
+        <h1 class="proj-page-title">Web Development</h1>
+        <p class="proj-page-sub">A collection of my projects for this subject.</p>
+        <a class="btn proj-back-btn btn-outline-light rounded-pill" href="projects.html">
+          <i class="bi bi-arrow-left me-2" aria-hidden="true"></i>Back to Projects
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="proj-collage-section">
+    <div class="container">
+      <div class="proj-count-strip fade-up" style="--delay:0.05s">
+        <div class="proj-count-line"></div>
+        <span class="proj-count-text">1 Project</span>
+        <div class="proj-count-line"></div>
+      </div>
+
+      <div class="proj-masonry">
+        <div class="proj-tile">
+          <a class="proj-card text-decoration-none" href="#modalBloomPOS" data-bs-toggle="modal" data-bs-target="#modalBloomPOS" aria-label="View Bloom POS project details">
+            <div class="proj-thumb">
+              <img class="proj-thumb-img" src="static/images/2.png" alt="Bloom POS project preview">
+              <div class="proj-overlay"><div class="proj-overlay-inner"><i class="bi bi-eye"></i><span>View Project</span></div></div>
+            </div>
+            <div class="proj-card-footer">
+              <p class="proj-card-name">My College Adventure</p>
+              <p class="proj-card-tag">Bento Box Layout &nbsp;·&nbsp; Individual</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade proj-modal" id="modalBloomPOS" tabindex="-1" aria-labelledby="labelBloomPOS" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="proj-modal-grid">
+            <div class="proj-modal-media">
+              <div id="slideshowBloom" class="proj-slideshow h-100"></div>
+            </div>
+            <div class="proj-modal-details">
+              <h2 class="modal-proj-title" id="labelBloomPOS">Flower Collage</h2>
+              <p class="modal-proj-desc">This displays a collection of my favorite flowers using a bento box layout.</p>
+              <hr class="modal-divider">
+              <div class="modal-meta">
+                <div class="modal-meta-item">
+                  <i class="bi bi-layers"></i>
+                  <div><span class="modal-meta-key">Type:</span><span class="modal-meta-val">Bento Box Layout using Bootstrap</span></div>
+                </div>
+                <div class="modal-meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <div><span class="modal-meta-key">Year:</span><span class="modal-meta-val">2026</span></div>
+                </div>
+              </div>
+              <hr class="modal-divider">
+              <div class="lang-chips">
+                <span class="lang-chip">HTML</span>
+                <span class="lang-chip">CSS</span>
+                <span class="lang-chip">JavaScript</span>
+                <span class="lang-chip">Bootstrap</span>
+              </div>
+              <a class="btn btn-outline-light rounded-pill proj-link-btn" href="https://example.com" target="_blank" rel="noopener noreferrer">
+                Project Link <i class="bi bi-box-arrow-up-right ms-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="ms-footer py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+          <img src="LogoB.svg" alt="Mariane Louise Sanchez logo" class="footer-logo">
+        </div>
+        <div class="col-md-8 text-center text-md-end">
+          <p class="footer-copy mb-0">© 2026 Mariane Louise Sanchez<br>
+          <span class="footer-copy-sub">Crafted with care &amp; curiosity.</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const navbar = document.querySelector('.ms-navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const fadeObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = entry.target.style.getPropertyValue('--delay') || '0s';
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(element => fadeObserver.observe(element));
+
+    const cardObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.proj-card').forEach(card => cardObserver.observe(card));
+
+    const slideshow = document.getElementById('slideshowBloom');
+    const projectImages = ['2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png'];
+    const slides = projectImages.map((image, index) => {
+      const slide = document.createElement('div');
+      slide.className = `proj-slide h-100${index === 0 ? ' active' : ''}`;
+      const img = document.createElement('img');
+      img.className = 'proj-slide-media img-fluid';
+      img.alt = `Bloom POS project screenshot ${index + 1}`;
+      img.src = `static/images/${image}`;
+      img.addEventListener('error', () => slide.remove());
+      slide.appendChild(img);
+      slideshow.appendChild(slide);
+      return slide;
+    });
+
+    let currentSlide = 0;
+    let slideshowTimer;
+    const showSlide = index => {
+      currentSlide = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle('active', slideIndex === currentSlide);
+      });
+    };
+    const stopSlideshow = () => {
+      window.clearInterval(slideshowTimer);
+      slideshowTimer = undefined;
+    };
+    const startSlideshow = () => {
+      stopSlideshow();
+      slideshowTimer = window.setInterval(() => showSlide(currentSlide + 1), 3000);
+    };
+    ['prev', 'next'].forEach(direction => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = `proj-nav proj-nav--${direction}`;
+      button.setAttribute('aria-label', direction === 'prev' ? 'Previous image' : 'Next image');
+      button.innerHTML = direction === 'prev'
+        ? '<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1.5 4 8l6.5 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>'
+        : '<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 1.5 12 8 5.5 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>';
+      button.addEventListener('click', () => {
+        showSlide(currentSlide + (direction === 'next' ? 1 : -1));
+        startSlideshow();
+      });
+      slideshow.appendChild(button);
+    });
+
+    const bloomModal = document.getElementById('modalBloomPOS');
+    bloomModal.addEventListener('shown.bs.modal', startSlideshow);
+    bloomModal.addEventListener('hidden.bs.modal', () => {
+      stopSlideshow();
+      showSlide(0);
+    });
+  </script>
+</body>
+</html>
