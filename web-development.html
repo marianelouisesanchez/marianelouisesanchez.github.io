@@ -53,7 +53,7 @@
     <div class="container">
       <div class="proj-count-strip fade-up" style="--delay:0.05s">
         <div class="proj-count-line"></div>
-        <span class="proj-count-text">1 Project</span>
+        <span class="proj-count-text">2 Projects</span>
         <div class="proj-count-line"></div>
       </div>
 
@@ -67,6 +67,18 @@
             <div class="proj-card-footer">
               <p class="proj-card-name">My College Adventure</p>
               <p class="proj-card-tag">Bento Box Layout &nbsp;·&nbsp; Individual</p>
+            </div>
+          </a>
+        </div>
+        <div class="proj-tile">
+          <a class="proj-card text-decoration-none" href="#modalJSON" data-bs-toggle="modal" data-bs-target="#modalJSON" aria-label="View JSON project details">
+            <div class="proj-thumb">
+              <img class="proj-thumb-img" src="static/images/56.png" alt="JSON project preview">
+              <div class="proj-overlay"><div class="proj-overlay-inner"><i class="bi bi-eye"></i><span>View Project</span></div></div>
+            </div>
+            <div class="proj-card-footer">
+              <p class="proj-card-name">My Dream Destinations</p>
+              <p class="proj-card-tag">JSON Script &nbsp;·&nbsp; Individual</p>
             </div>
           </a>
         </div>
@@ -107,6 +119,51 @@
                 <span class="lang-chip">Bootstrap</span>
               </div>
               <a class="btn btn-outline-light rounded-pill proj-link-btn" href="https://marianelouisesanchez.github.io/web-development/Bento_Box/" target="_blank" rel="noopener noreferrer">
+                Project Link <i class="bi bi-box-arrow-up-right ms-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade proj-modal" id="modalJSON" tabindex="-1" aria-labelledby="labelJSON" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="proj-modal-grid">
+            <div class="proj-modal-media">
+              <div id="slideshowJSON" class="proj-slideshow h-100"></div>
+            </div>
+            <div class="proj-modal-details">
+              <h2 class="modal-proj-title" id="labelJSON">My Dream Destinations</h2>
+              <p class="modal-proj-desc">A travel bucket list page whose flip cards are generated from a JSON script,
+                showing each destination's details, things to do and best time to go.</p>
+              <hr class="modal-divider">
+              <div class="modal-meta">
+                <div class="modal-meta-item">
+                  <i class="bi bi-layers"></i>
+                  <div><span class="modal-meta-key">Type:</span><span class="modal-meta-val">JSON Script using
+                      Bootstrap</span></div>
+                </div>
+                <div class="modal-meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <div><span class="modal-meta-key">Year:</span><span class="modal-meta-val">2026</span></div>
+                </div>
+              </div>
+              <hr class="modal-divider">
+              <div class="lang-chips">
+                <span class="lang-chip">HTML</span>
+                <span class="lang-chip">CSS</span>
+                <span class="lang-chip">JavaScript</span>
+                <span class="lang-chip">JSON</span>
+                <span class="lang-chip">Bootstrap</span>
+              </div>
+              <a class="btn btn-outline-light rounded-pill proj-link-btn" href="https://marianelouisesanchez.github.io/web-development/JSON/" target="_blank" rel="noopener noreferrer">
                 Project Link <i class="bi bi-box-arrow-up-right ms-2" aria-hidden="true"></i>
               </a>
             </div>
@@ -158,59 +215,63 @@
     }, { threshold: 0.12 });
     document.querySelectorAll('.proj-card').forEach(card => cardObserver.observe(card));
 
-    const slideshow = document.getElementById('slideshowBento');
-    const projectImages = ['55.png'];
-    const slides = projectImages.map((image, index) => {
-      const slide = document.createElement('div');
-      slide.className = `proj-slide h-100${index === 0 ? ' active' : ''}`;
-      const img = document.createElement('img');
-      img.className = 'proj-slide-media img-fluid';
-      img.alt = `Bento Box project screenshot ${index + 1}`;
-      img.src = `static/images/${image}`;
-      img.addEventListener('error', () => slide.remove());
-      slide.appendChild(img);
-      slideshow.appendChild(slide);
-      return slide;
-    });
-
-    let currentSlide = 0;
-    let slideshowTimer;
-    const showSlide = index => {
-      currentSlide = (index + slides.length) % slides.length;
-      slides.forEach((slide, slideIndex) => {
-        slide.classList.toggle('active', slideIndex === currentSlide);
+    function setupSlideshow(modalId, containerId, images, altText) {
+      const slideshow = document.getElementById(containerId);
+      const modal = document.getElementById(modalId);
+      const slides = images.map((image, index) => {
+        const slide = document.createElement('div');
+        slide.className = `proj-slide h-100${index === 0 ? ' active' : ''}`;
+        const img = document.createElement('img');
+        img.className = 'proj-slide-media img-fluid';
+        img.alt = `${altText} screenshot ${index + 1}`;
+        img.src = `static/images/${image}`;
+        img.addEventListener('error', () => slide.remove());
+        slide.appendChild(img);
+        slideshow.appendChild(slide);
+        return slide;
       });
-    };
-    const stopSlideshow = () => {
-      window.clearInterval(slideshowTimer);
-      slideshowTimer = undefined;
-    };
-    const startSlideshow = () => {
-      stopSlideshow();
-      if (slides.length < 2) return;
-      slideshowTimer = window.setInterval(() => showSlide(currentSlide + 1), 3000);
-    };
-    (slides.length > 1 ? ['prev', 'next'] : []).forEach(direction => {
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = `proj-nav proj-nav--${direction}`;
-      button.setAttribute('aria-label', direction === 'prev' ? 'Previous image' : 'Next image');
-      button.innerHTML = direction === 'prev'
-        ? '<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1.5 4 8l6.5 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>'
-        : '<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 1.5 12 8 5.5 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>';
-      button.addEventListener('click', () => {
-        showSlide(currentSlide + (direction === 'next' ? 1 : -1));
-        startSlideshow();
-      });
-      slideshow.appendChild(button);
-    });
 
-    const bentoModal = document.getElementById('modalBento');
-    bentoModal.addEventListener('shown.bs.modal', startSlideshow);
-    bentoModal.addEventListener('hidden.bs.modal', () => {
-      stopSlideshow();
-      showSlide(0);
-    });
+      let currentSlide = 0;
+      let slideshowTimer;
+      const showSlide = index => {
+        currentSlide = (index + slides.length) % slides.length;
+        slides.forEach((slide, slideIndex) => {
+          slide.classList.toggle('active', slideIndex === currentSlide);
+        });
+      };
+      const stopSlideshow = () => {
+        window.clearInterval(slideshowTimer);
+        slideshowTimer = undefined;
+      };
+      const startSlideshow = () => {
+        stopSlideshow();
+        if (slides.length < 2) return;
+        slideshowTimer = window.setInterval(() => showSlide(currentSlide + 1), 3000);
+      };
+      (slides.length > 1 ? ['prev', 'next'] : []).forEach(direction => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = `proj-nav proj-nav--${direction}`;
+        button.setAttribute('aria-label', direction === 'prev' ? 'Previous image' : 'Next image');
+        button.innerHTML = direction === 'prev'
+          ? '<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1.5 4 8l6.5 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>'
+          : '<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 1.5 12 8 5.5 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>';
+        button.addEventListener('click', () => {
+          showSlide(currentSlide + (direction === 'next' ? 1 : -1));
+          startSlideshow();
+        });
+        slideshow.appendChild(button);
+      });
+
+      modal.addEventListener('shown.bs.modal', startSlideshow);
+      modal.addEventListener('hidden.bs.modal', () => {
+        stopSlideshow();
+        showSlide(0);
+      });
+    }
+
+    setupSlideshow('modalBento', 'slideshowBento', ['55.png'], 'Bento Box project');
+    setupSlideshow('modalJSON', 'slideshowJSON', ['56.png', '57.png', '58.png', '59.png'], 'JSON project');
   </script>
 </body>
 </html>
